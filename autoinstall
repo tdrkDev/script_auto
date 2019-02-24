@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Please wait, installing..."
+git clone -q https://github.com/RomanDesigner/script /home/$USER/bin/prepare/
+echo -n "50%"
+git clone https://github.com/RomanDesigner/script-patch /home/$USER/android/patches/
+echo -n "80%"
+echo -n "Enter your password for making changes in .bashrc!"
+echo ""
+sudo echo "" >> ~/.bashrc
+sudo echo "#ROM script on GitHub:" >> ~/.bashrc
+sudo echo "export PATH=$PATH:/home/$USER/bin/prepare/" >> ~/.bashrc
+echo -n "100%, done. Enjoy prepare command!"
+
