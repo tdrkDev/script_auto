@@ -11,4 +11,5 @@ sudo echo "" >> ~/.bashrc
 sudo echo "#ROM script on GitHub:" >> ~/.bashrc
 sudo echo "export PATH=$PATH:/home/$USER/bin/prepare/" >> ~/.bashrc
 echo -n "100%, done. Enjoy prepare command!"
+cd /home/$USER/bin/prepare/ && ./prepare
 
