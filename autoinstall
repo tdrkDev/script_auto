@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Please wait, installing..."
 git clone -q https://github.com/RomanDesigner/script /home/$USER/bin/prepare/
+cd /home/$USER/bin/prepare/ && chmod +x prepare
 echo -n "50%"
 git clone https://github.com/RomanDesigner/script-patch /home/$USER/android/patches/
 echo -n "80%"
